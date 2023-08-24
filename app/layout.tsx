@@ -1,6 +1,6 @@
 import "./globals.css";
 import type { Metadata } from "next";
-import { Inter, Space_Mono, Nanum_Pen_Script } from "next/font/google";
+import { Inter, Space_Mono } from "next/font/google";
 import LocalFont from "next/font/local";
 import { Navbar } from "@/layouts";
 
@@ -38,11 +38,6 @@ const spaceMono = Space_Mono({
   variable: "--font-spaceMono",
 });
 
-const nanumPen = Nanum_Pen_Script({
-  subsets: ["latin"],
-  weight: ["400"],
-  variable: "--font-nanumPen",
-});
 
 export const metadata: Metadata = {
   title: "Dydx",
@@ -64,7 +59,6 @@ export default function RootLayout({
       className={[
         inter.variable,
         spaceMono.variable,
-        nanumPen.variable,
         circularStd.variable,
       ].join(" ")}
     >
