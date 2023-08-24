@@ -1,0 +1,38 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+body {
+  @apply bg-primary font-circular;
+}
+
+@layer components {
+  .container {
+    @apply max-w-[1320px] w-full mx-auto px-4;
+  }
+
+  .link {
+    @apply text-monoXl lg:text-monoMd xl:text-monoLg font-normal text-secondary rounded-lg py-3 px-4 font-spaceMono hover:bg-[#4F4C64] hover:text-white duration-300 transition-all;
+  }
+
+  .link.active {
+    @apply text-white;
+  }
+
+  .btn-primary {
+    @apply text-lg bg-grandBlue text-white font-medium py-3 px-4 rounded-lg;
+  }
+
+  .btn-secondary {
+    @apply text-lg bg-bgSecondary text-white font-medium py-3 px-4 rounded-lg;
+  }
+
+  .Icon {
+    @apply w-7 h-7 text-secondary hover:text-white;
+  }
+  .projects__content {
+    @apply flex items-center overflow-x-scroll space-x-6 ml-[10%] mb-[125px] scroll-smooth;
+    -webkit-overflow-scrolling: touch;
+    scroll-snap-type: mandatory;
+  }
+}
