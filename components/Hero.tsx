@@ -37,7 +37,7 @@ const Hero = () => {
       </div>
       <div className="grid grid-cols-3 mt-[80px] w-full">
         {data.map(({ num, title }, i) => (
-          <div className="flex flex-col items-center justify-center">
+          <div className="flex flex-col items-center justify-center" key={i}>
             <span className="text-monoXl text-white font-spaceMono">{num}</span>
             <h3 className="text-monoLg text-secondary font-spaceMono">
               {title}
